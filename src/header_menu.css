@@ -1,0 +1,235 @@
+/************************************ FONTS ************************************/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot');
+	src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.ttf') format('truetype'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.woff') format('woff'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/************************************* END FONTS *************************************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	background: #1f253d;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, p, a, span{
+	color: #fff;
+}
+.scnd-font-color {
+	color: #9099b7;
+}
+
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.horizontal-list li {
+	float: left;
+}
+
+.icon {
+	font-size: 25px;
+}
+
+.titular {
+	display: block;
+	line-height: 60px;
+	margin: 0;
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.small-profile-picture {
+	width: 104px;
+	height: 30px;
+}
+
+	/*********************************************** HEADER ***********************************************/
+.search {
+  font-size: 17px;
+	line-height: 80px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 15px;
+}
+.input-search {
+  font-size: 17px;
+  width: 500px;
+  border: 0;
+  height: 38px;
+  border-radius: 20px;
+  padding-left: 16px;
+  padding-right: 46px;
+  box-sizing: border-box;
+  color: #2d2d2d;
+  letter-spacing: .4px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.header-menu {
+	font-size: 17px;
+	line-height: 80px;
+  float: right;
+  display: inline-block;
+}
+.header-menu li {
+	position: relative;
+  		-webkit-transform: translateZ(0); /** To avoid a flash when hover messages **/
+}
+.header-menu-tab {
+	padding: 0 27px;
+	display: block;
+	line-height: 74px;
+	font-size: 17px;
+	-webkit-transition: background .3s;
+	transition: background .3s;
+}
+.header-menu-tab:hover {
+	background: #50597b;
+	border-bottom: 4px solid #11a8ab;
+	text-decoration: none;
+}
+.header-menu-tab .icon {
+	padding-right: 15px;
+}
+.header-menu-number {
+	position: absolute;
+	line-height: 22px;
+	padding: 0 6px;
+	font-weight: 700;
+	background: #e64c65;
+	border-radius: 100%;
+	top: 15px;
+	right: 2px;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+.header-menu li:hover .header-menu-number {
+	text-decoration: none;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+}
+.profile-menu {
+	float: left;
+	height: 80px;
+	padding-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.small-profile-picture {
+	display: inline-block;
+	vertical-align: middle;
+}
+/** CONTAINERS **/
+.container {
+	float: left;
+	width: 300px;
+}
+.block {
+	margin-bottom: 25px;
+	background: #394264;
+	border-radius: 5px;
+  height: 80px;
+}
+	/******************************************** LEFT CONTAINER *****************************************/
+.menu-box {
+	height: 360px;
+  text-align: left;
+}
+.menu-box .titular {
+	background: #11a8ab;
+}
+.menu-box-menu .icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 28px;
+	margin-left: 20px;
+	margin-right: 15px;
+}
+.menu-box-number {
+	width: 36px;
+	line-height: 22px;
+	background: #50597b;
+	text-align: center;
+	border-radius: 15px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+.menu-box-menu li{
+	height: 60px;
+	position: relative;
+}
+.menu-box-tab {
+	line-height: 60px;
+	display: block;
+	border-bottom: 1px solid #1f253d;
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.menu-box-tab:hover {
+	background: #50597b;
+	border-top: 1px solid #1f253d;
+	text-decoration: none;
+}
+.menu-box-tab:hover .icon {
+	color: #fff;
+}
+.menu-box-tab:hover .menu-box-number {
+	background: #e64c65;
+}
