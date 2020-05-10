@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 class MenuGauche extends Component {
 
@@ -22,8 +22,6 @@ class MenuGauche extends Component {
 
   render() {
 
-    const year = new Date().getFullYear();
-
     return (
       <div className="left-container container">
         <div className="menu-box block">
@@ -42,9 +40,7 @@ class MenuGauche extends Component {
               <a className="menu-box-tab" href="#12"><span className="icon entypo-cog scnd-font-color"></span>Account Settings</a>
             </li>
             <li>
-              <a className="menu-box-tab" href="#13">
-                <sapn className="icon entypo-chart-line scnd-font-color"></sapn>Statistics
-              </a>
+              <a className="menu-box-tab" href="#13"><span className="icon entypo-chart-line scnd-font-color"></span>Statistics</a>
             </li>
           </ul>
         </div>

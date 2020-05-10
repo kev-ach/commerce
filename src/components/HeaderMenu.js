@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import logo_sport from '../images/asos_logo.png';
 
 class HeaderMenu extends Component {
@@ -7,15 +7,15 @@ class HeaderMenu extends Component {
     searchValue: ''
   }
 
-  valideSearch = () => {
+  getSearch = e => {
     this.setState({
-      searchValue: 'Va ranger ta chambre'
+      searchValue: e.target.value
     })
   }
 
   render() {
 
-      const year = new Date().getFullYear();
+    const btnSearch = this.state.searchValue !== "" ? <span className="icon fontawesome-search scnd-font-color pointer" onClick={this.valideSearch}></span> : <span className="icon fontawesome-search scnd-font-color"></span>;
 
     return (
       <div>
@@ -26,9 +26,9 @@ class HeaderMenu extends Component {
             </div>
           </div>
           <div className="search">
-            <input type="text" className="input-search" autocomplete="off" placeholder="Rechercher" maxlength="150" />
+            <input type="text" className="input-search" autoComplete="off" placeholder="Rechercher" maxLength="150" onChange={this.getSearch} value={this.state.searchValue}/>
           </div>
-          <span className="icon fontawesome-search scnd-font-color pointer" onClick={this.valideSearch}></span>
+          {btnSearch}
           <ul className="header-menu horizontal-list">
             <li>
               <a className="header-menu-tab" href="#2"><span className="icon fontawesome-user scnd-font-color"></span>Compte</a>
